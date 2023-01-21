@@ -15,7 +15,7 @@ public class UserBean {
 	public UserBean() {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "Sudha@7878");
+			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "Sudha7878");
 			st = con.createStatement();
 		} catch (Exception e) {
 			e.printStackTrace();
