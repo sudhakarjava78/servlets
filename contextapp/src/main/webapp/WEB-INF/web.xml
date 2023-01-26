@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+	id="WebApp_ID" version="5.0">
+	<display-name>contextapp</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+	<context-param>
+		<param-name>name</param-name>
+		<param-value>Ram Charan</param-value>
+	</context-param>
+	<context-param>
+		<param-name>designation</param-name>
+		<param-value>Hero</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>ContextServlet</servlet-name>
+		<servlet-class>com.sudha.ContextServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContextServlet</servlet-name>
+		<url-pattern>/context</url-pattern>
+	</servlet-mapping>
+</web-app>
